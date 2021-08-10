@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <link rel="stylesheet" href="nav.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+        $.get('nav_customer.php', function(response) {
+            $('#nav-placeholder').html(response);
+        });
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inspiration for Pricing Tables | Codrops</title>
+    <meta name="description" content="Various styles and inspiration for responsive, flexbox-based HTML pricing tables" />
+    <meta name="keywords" content="pricing table, inspiration, ui, modern, responsive, flexbox, html, component" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sahitya:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div id="nav-placeholder" class="sticky-top"> </div>
+    <div class="container">
+        <header class="codrops-header">
+            <div class="codrops-links">
+            </div>
+            <h1> THE CONTINENTAL <span>HOTEL</span></h1>
+        </header>
+        <section class="pricing-section bg-8">
+            <h2 class="pricing-section__title">Room Detail</h2>
+            <div class="pricing pricing--tashi">
+                <div class="pricing__item">
+                    <h3 class="pricing__title">Standard Room</h3>
+                    <p class="pricing__sentence">Perfect for 2 member that you can choose Queen bed or Single bed</p>
+                    <div class="pricing__price"><span class="pricing__currency">฿</span>850<span class="pricing__period">/ night</span></div>
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature">1 Queen bed & 2 Single bed</li>
+                        <li class="pricing__feature">Shower&bathtub</li>
+                        <li class="pricing__feature">Avaliable 1 car parking</li>
+                        <li class="pricing__feature">Free Wifi</li>
+                    </ul>
+                    <form method="get" action="standardroom.php"><button class="pricing__action" aria-label="Purchase this plan"><span class="icon icon--arrow-right"></span></a></button></form>
+                </div>
+                <div class="pricing__item">
+                    <h3 class="pricing__title">Deluxe Room</h3>
+                    <p class="pricing__sentence">Suitable for couple or business co-worker</p>
+                    <div class="pricing__price"><span class="pricing__currency">฿</span>1000<span class="pricing__period">/ night</span></div>
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature">1 Queen bed & 2 Single bed</li>
+                        <li class="pricing__feature">City View</li>
+                        <li class="pricing__feature">Separate shower/bathtub</li>
+                        <li class="pricing__feature">Living Room/Working Room</li>
+                        <li class="pricing__feature">Avaliable 1 car parking</li>
+                    </ul>
+                    <form method="get" action="deluxeroom.php"><button class="pricing__action" aria-label="Purchase this plan"><span class="icon icon--arrow-right"></span></button></form>
+                </div>
+                <div class="pricing__item">
+                    <h3 class="pricing__title">Family Room</h3>
+                    <p class="pricing__sentence">For any Family with an 4 number of members</p>
+                    <div class="pricing__price"><span class="pricing__currency">฿</span>1500<span class="pricing__period">/ night</span></div>
+                    <ul class="pricing__feature-list">
+                        <li class="pricing__feature">2 Bedroom</li>
+                        <li class="pricing__feature">City View</li>
+                        <li class="pricing__feature">Separate shower/bathtub</li>
+                        <li class="pricing__feature">Living Room and Kitchenette</li>
+                        <li class="pricing__feature">Avaliable 2 car parking</li>
+                    </ul>
+                    <form method="get" action="familyroom.php"><button class="pricing__action" aria-label="Purchase this plan"><span class="icon icon--arrow-right"></span></button></form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- /container -->
+</body>
+
+</html>

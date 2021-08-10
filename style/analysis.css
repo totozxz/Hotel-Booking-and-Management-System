@@ -1,0 +1,16 @@
+table
+{
+    font-size:25px
+}
+
+p
+{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+thead{
+    background-color: rgb(226, 185, 35);
+    color: #f4f4fc;
+}

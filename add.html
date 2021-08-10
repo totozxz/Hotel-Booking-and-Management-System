@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <link rel="stylesheet" href="nav.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+        $.get('nav_staff.php', function(response) {
+            $('#nav-placeholder').html(response);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav-placeholder" class="sticky-top"> </div>
+    <link rel="stylesheet" href="main.css">
+    <table class="container">
+        <tr>
+            <th>
+                <h1>StaffID</h1>
+            </th>
+            <th>
+                <h1>ExpenseItem</h1>
+            </th>
+            <th>
+                <h1>ExpenseType</h1>
+            </th>
+            <th>
+                <h1>Price</h1>
+            </th>
+            <th>
+                <h1>Payed Date</h1>
+            </th>
+        </tr>
+        <form action="add.php" method="post">
+            <tr>s
+                <td> <input type="text" name="StaffID"> </td>
+                <td> <input type="text" name="ExpenseItem"> </td>
+                <td> <select name="ExpenseType">
+                        <option value="Other" >Other</option>
+                        <option value="Utility">Utility</option>
+                        <option value="Maintainnance">Maintainnance</option>
+                        <option value="Salary">Salary</option>
+                        <option value="Food">Food</option></select>
+                </td>
+                <td> <input type="number" name="Price"> </td>
+                <td> <input type="date" name="PayedDate"> </td>
+            </tr>
+    </table>
+    <br>
+    <center><input type="submit" class="button1" value="Add"></center>
+    </form>
+</body>
+
+
+</html>
